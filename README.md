@@ -8,11 +8,12 @@ cd SFTP-space && npm install
 npm link
 
 ----------------
-在项目文件夹根目录添加一个 server.json 文件：
+在项目文件夹根目录添加一个**server.json** 文件：
 
 文件格式如下（example）：
 
-`{
+```json
+{
   "host": "192.168.111.111",
   "port": 22,
   "username": "root",
@@ -21,12 +22,14 @@ npm link
     "localPath": "./dist",
     "remotePath": "/usr/local/nginx/html/spaceItems/myProject"
   }
-}`
+}
+```
 
 ---------------
 
-在项目文件夹中的 package.json 中添加script:
-<font color='red'>"upload": "space send -c server.json" </font>
+在项目文件夹中的 **package.json** 中添加**script**:
+
+=="upload": "space send -c server.json"==
 
 -------------
 
