@@ -28,8 +28,9 @@ npm link
 ---------------
 
 在项目文件夹中的 **package.json** 中添加**script**:
-
-=="upload": "space send -c server.json"==
+```json
+"upload": "space send -c server.json"
+```
 
 -------------
 
@@ -37,3 +38,4 @@ npm run upload
 
 --------------
 
+![Alt](./example.png)
